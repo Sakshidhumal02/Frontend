@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.container{
+    height: 500px;
+    width: 500px;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.window{
+    height: 100px;
+    width: 150px;
+    background-color: darkcyan;
+}
+.window:hover{
+    /*transform: rotate(-60deg);
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    transform-origin: top right;*/
+
+    /*transform: perspective(300px)rotatex(-150deg);
+    transform-origin: top;
+    transition: all;
+    transition-duration: 3s;
+    transition-timing-function: linear;*/
+
+    transform: perspective(200px)rotatey(-90deg);
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transform-origin: right center;
+}
